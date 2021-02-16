@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ body {
     overflow-x: hidden;
 }
 
@@ -600,12 +600,13 @@ body{margin-top:20px;
     }
     
     .socials a {
-        width: 35px;
-        height: 35px;
-        background-color: #6893e1;
-        border-radius: 50%;
-        -webkit-box-shadow: 0 3px 2px 0 #516cd9;
-        box-shadow: 0 3px 2px 0 #516cd9;
+        width: 40px;
+        height: 40px;
+        background-color: #000205;
+        border-radius: 20%;
+        -webkit-box-shadow: 0 3px 2px 0 #000104;
+        box-shadow: 0 px 2px 0 #00030c;
+/* 
         text-align: center;
         color: #fff;
         padding-top: 10px;

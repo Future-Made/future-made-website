@@ -4,28 +4,18 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.location }}</h3>
-                        <p>
-                            We are <strong>decentralized</strong>; in Germany, Czech Republic, Netherlands and Italy.
-                            <!-- {% for adress in site.address %}
-                                {{ adress.line }} <br>
-		                    {% endfor %} -->
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-
+                        
                         <h3>{{ site.footer.social }}</h3>
-
+                        
                         <ul class="list-inline">
                             <li> 
                                 <strong>
-                                future.made@offsetmovement.org
+                                    future.made<br>@<br>offsetmovement.org
                                 </strong>
                             </li>
-                            <br>
+                            
                             <li class="divider"></li>
-
-                            <br><br>
+                            
                             {% for network in site.social %}
                             <li>
                                 <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
@@ -34,8 +24,22 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
+                        
+                        <h3>{{ site.footer.location }}</h3>
+                        <p class="text-center">
+                            We are <strong>decentralized</strong> <br>
+                            <span><i class="fas fa-globe-europe"></i></span>
+                            <br> 
+                            Germany, Czech Republic, Netherlands and Italy.
+                            <!-- {% for adress in site.address %}
+                                {{ adress.line }} <br>
+                            {% endfor %} -->
+                        </p>
+                    </div>
+
+                    <div class="footer-col col-md-4">
                         <h3>{{ site.footer.credits }}</h3>
-                        <p>{{ site.credits }}</p>
+                        <p class="text-center">{{ site.credits }}</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +48,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; {{ site.footer.copyright }} 2020-20{{ site.time | date: '%y' }}
+                        &lt; |    &copy; {{ site.footer.copyright }} 2020-20{{ site.time | date: '%y' }}    | &gt;
                     </div>
                 </div>
             </div>
